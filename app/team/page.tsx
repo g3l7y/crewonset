@@ -13,23 +13,23 @@ export const metadata: Metadata = {
 
 const TEAM = [
   {
-    name: 'Princess',
-    role: 'Project Lead & Game Designer',
+    name: 'Princess Angela Cartel',
+    role: 'Technical Writer',
     image: '/images/team-princess.png',
   },
   {
-    name: 'Rae',
-    role: 'Programmer & Systems',
+    name: 'Rae Yshene Acido',
+    role: 'Designer and Animation',
     image: '/images/team-rae.png',
   },
   {
-    name: 'Joseph',
-    role: 'Art & Animation',
+    name: 'Joseph Namuag',
+    role: 'System Analyst',
     image: '/images/team-joseph.png',
   },
   {
-    name: 'Mckelvin',
-    role: 'Audio & Level Design',
+    name: 'Mc Kelvin Bocateja',
+    role: 'Programmer and Systems',
     image: '/images/team-mckelvin.png',
   },
 ]
