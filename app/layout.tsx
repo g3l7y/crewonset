@@ -1,10 +1,23 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
+import { Oswald, Inter } from 'next/font/google'
 import './globals.css'
 
+const oswald = Oswald({
+  subsets: ['latin'],
+  variable: '--font-display',
+  weight: ['400', '500', '600', '700'],
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-body',
+})
+
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Crew On Set — Video Commercial Production Sim',
+  description:
+    'Crew On Set is a video commercial production simulation game. Take on the roles of Director, Cameraman, AV Technician, and Editor to bring commercials to life.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -39,8 +52,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased">
+    <html
+      lang="en"
+      className={`${oswald.variable} ${inter.variable} bg-background`}
+    >
+      <body className="font-body antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
