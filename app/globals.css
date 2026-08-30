@@ -12,6 +12,8 @@
   --color-panel: var(--panel);
   --color-panel-foreground: var(--panel-foreground);
   --color-panel-muted: var(--panel-muted);
+  --color-admin-bg: var(--admin-bg);
+  --color-admin-line: var(--admin-line);
   --color-rivet: var(--rivet);
   --color-brown: var(--brown);
   --color-brown-foreground: var(--brown-foreground);
@@ -88,6 +90,9 @@
   --panel: oklch(0.28 0.005 60);
   --panel-foreground: oklch(0.95 0.006 85);
   --panel-muted: oklch(0.38 0.005 60);
+  /* Admin dark-mode body: deep charcoal / near-black */
+  --admin-bg: oklch(0.17 0.004 60);
+  --admin-line: oklch(1 0 0 / 6%);
   --rivet: oklch(0.55 0.01 70);
   --brown: oklch(0.52 0.055 62);
   --brown-foreground: oklch(0.97 0.01 85);
